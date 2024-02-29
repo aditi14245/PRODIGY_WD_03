@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe Game</title>
+        <link rel="stylesheet" href="stylesheet3.css">
+        
+    </head>
+    <body>
+        
+        <div id="container">
+            <div id="playerSelect">
+              <label for="player">Select Player:</label>
+              <select id="player">
+                <option value="X">X</option>
+                <option value="O">O</option>
+              </select>
+            </div>
+            <div id="board"></div>
+            <button id="restartBtn">Restart Game</button>
+          </div>
+          <!-- Outcome Modal -->
+          <div id="outcomeModal">
+            <div class="modal-content" id="modalContent">
+              <p id="outcomeMessage"></p>
+              <button class="close-btn" onclick="closeModal()">Close</button>
+            </div>
+          </div>
+          <script src="game.js"></script>
+    </body>
+</html>
